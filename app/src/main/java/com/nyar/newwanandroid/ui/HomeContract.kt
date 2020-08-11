@@ -1,5 +1,6 @@
 package com.nyar.newwanandroid.ui
 
+import com.nyar.newwanandroid.BannerBean
 import com.nyar.newwanandroid.base.IBasePresenter
 import com.nyar.newwanandroid.base.IBaseView
 
