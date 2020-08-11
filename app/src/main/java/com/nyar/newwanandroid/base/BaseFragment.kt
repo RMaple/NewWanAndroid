@@ -2,10 +2,9 @@ package com.nyar.newwanandroid.base
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.nyar.newwanandroid.IBasePresenter
-import com.nyar.newwanandroid.IBaseView
 
-abstract class BaseFragment<P : IBasePresenter> : Fragment(), IBaseView {
+abstract class BaseFragment<P : IBasePresenter> : Fragment(),
+    IBaseView {
 
     protected var mPresenter: P? = null;
 

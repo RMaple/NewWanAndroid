@@ -1,9 +1,10 @@
-package com.nyar.newwanandroid
+package com.nyar.newwanandroid.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-abstract class BaseActivity<P : IBasePresenter> : AppCompatActivity(), IBaseView {
+abstract class BaseActivity<P : IBasePresenter> : AppCompatActivity(),
+    IBaseView {
 
     protected var mPresenter: P? = null;
 

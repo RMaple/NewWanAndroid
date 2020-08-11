@@ -1,8 +1,10 @@
 package com.nyar.newwanandroid
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.nyar.newwanandroid.base.BaseActivity
+import com.nyar.newwanandroid.base.IBasePresenter
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity<IBasePresenter>() {
 
@@ -22,14 +24,24 @@ class MainActivity : BaseActivity<IBasePresenter>() {
 
     override fun init() {
         initFragment()
+        initBottom()
     }
+
 
     private fun initFragment() {
 
 
     }
 
+    private fun initBottom() {
+        bn_main.setOnNavigationItemSelectedListener{
+            when(it.itemId){
+//                R.id.menu_home->
+            }
+        }
+    }
+
+
     override fun onError(e: String) {
-        TODO("Not yet implemented")
     }
 }
